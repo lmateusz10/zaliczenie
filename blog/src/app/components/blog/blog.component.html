@@ -1,0 +1,5 @@
+<ul style="list-style-type:none">
+  <li *ngFor="let item of items | filter: filterText">
+    <app-blog-item [image]="item.url" [text]="item.title" [id]="item.id"></app-blog-item>
+  </li>
+</ul>
